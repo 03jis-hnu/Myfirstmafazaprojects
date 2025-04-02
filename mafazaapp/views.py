@@ -53,9 +53,9 @@ def Home(request):
     projects = InvestmentProject.objects.filter(is_active=True)  
     return render(request, "home.html", {"projects": projects})
 
-def test(request):
+# def test(request):
     
-    return render(request, "softui.html")
+#     return render(request, "softui.html")
 
 def user_logout(request):
     logout(request)

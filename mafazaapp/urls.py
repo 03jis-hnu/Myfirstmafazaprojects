@@ -2,7 +2,7 @@ from django.urls import path
 
 from django.contrib.auth.views import LogoutView
 
-from mafazaapp.views import Adminuser, Home, Myproject,  admin_ledger, admin_view_user_documents,  assign_project, change_password,  create_transaction_view,  custom_login, delete_document, edit_profile,  forgot_password,investment_projects, ledger_view, pending_approval, project_list, reset_password, signup,staff_dashboard, staff_profile, staff_transactions_view, test, toggle_project_status, update_transaction_status, upload_document, upload_receipt, user_logout, view_documents, download_ledger_pdf, check_upcoming_returns, download_staff_transactions_pdf, download_staff_transactions_csv
+from mafazaapp.views import Adminuser, Home, Myproject,  admin_ledger, admin_view_user_documents,  assign_project, change_password,  create_transaction_view,  custom_login, delete_document, edit_profile,  forgot_password,investment_projects, ledger_view, pending_approval, project_list, reset_password, signup,staff_dashboard, staff_profile, staff_transactions_view, toggle_project_status, update_transaction_status, upload_document, upload_receipt, user_logout, view_documents, download_ledger_pdf, check_upcoming_returns, download_staff_transactions_pdf, download_staff_transactions_csv
 
 
 
@@ -38,7 +38,7 @@ urlpatterns = [
     path('check-upcoming-returns/', check_upcoming_returns, name='check_upcoming_returns'),
     path('staff/transactions/pdf/', download_staff_transactions_pdf, name='staff_transactions_pdf'),
     path('staff/transactions/csv/', download_staff_transactions_csv, name='staff_transactions_csv'),
-    path('test/', test, name='test'),
+    # path('test/', test, name='test'),
      
    
     
