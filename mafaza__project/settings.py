@@ -76,7 +76,7 @@ DEFAULT_FROM_EMAIL = 'noreply@example.com'
 # Middleware Settings
 MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
-     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -170,6 +170,7 @@ STATICFILES_DIRS = [
 ]
 
 STATICFILES_DIRS = [BASE_DIR /"mafazaapp"/ "static"]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Add this line
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
