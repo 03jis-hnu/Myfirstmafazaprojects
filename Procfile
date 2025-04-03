@@ -1,1 +1,1 @@
-web: gunicorn mafaza__project.wsgi:application
+web: gunicorn mafaza__project.wsgi
